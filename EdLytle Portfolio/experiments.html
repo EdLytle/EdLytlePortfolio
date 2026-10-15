@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About Me</title>
+<title>!</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Luckiest+Guy&family=M+PLUS+Rounded+1c&family=Ranchers&display=swap" rel="stylesheet">
+</head>
+	
+
+<body>
+	 <ul class="topnav">
+  <li><a  href="index.html">ABOUT</a></li>
+  <li><a href="work.html">WORK</a></li>
+  <li><a href="manifesto.html">MANIFESTO</a></li>
+  <li><a class="active" href="experiments.html">EXPERIMENTS</a></li>
+</ul>
+	<section class="hero"><!--Hero Section-->
+		
+
+		<div class="centerImage"> <h1 style="font-size: 7em">EXPERIMENTS:</h1>
+		</div>
+<a style="font-size: 2em" href="https://drive.google.com/drive/folders/138Dli7o9qefwIyKHkvK41R33B7PqEd4r" target="_blank"
+			<cite class="centerImage"><strong>Banner Credit: Ed Lytle</cite>
+	</a>
+	</section>
+	
+	<!--Typography Section-->
+	<section class="sectionBG">
+		<p style="font-size: 2em">These experiments are based on experiments in W3Schools, and many of which mark my first time using <a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a>, different types of <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>, and more. So, without further ado...</p>
+		
+					<div class="magnifyshake"> 	
+<h2 id="StartOfPage" style="font-size: 7em; margin-top: -50">1. Fortune Cookie</h2>
+	</div>
+		<p style= "font-size: 2em"; "text-align: left">Want your fortune told? Click the paper!</p>
+		<!-- Trigger/Open The Modal -->
+		<div class="centerImage"> 		
+			<img  src="images/fortunecookie.png"images/fontpairing.png"" alt= "The cookie." width="400"/>
+	   </div>
+	<cite class="centerImage">Image Credit: Pixabay</cite><br><br><br><br>
+<button id="myBtn" style="font-size: 3.5em;">Here we go... this will change your life...</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="font-size: 3.5em;">You will have a good day today. Pretty sweet, right?</p>
+  </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</div>
+	</section>
+	
+
+<section class="sectionBG2">
+		
+					<div class="magnifyshake"> 	
+<h2 id="StartOfPage" style="font-size: 7em; margin-top: -50">2. Accordion Color Transitions</h2>
+	
+	</div>
+		<p style= "font-size: 2em"; "text-align: left">Messing around with the hover state on a collapsible menu. This would become part of my larger site. Despite the name, it doesn't play music, sorry.<br> Or does it?</p>
+	<button class="accordion" style="font-size: 2em;">Any music here?</button>
+<div class="panel">
+  <p style="font-size: 2em;" >Not seeing any.</p>
+</div>
+
+<button class="accordion"style="font-size: 2em;">Maybe here?</button>
+<div class="panel">
+  <p style="font-size: 2em;" >Doesn't look like it...</p>
+</div>
+
+<button class="accordion" style="font-size: 2em;">It has to be here, right?</button>
+<div class="panel">
+  <p style="font-size: 2em;">Nothing. Zero. Zip. Zilch. Nada.</p>
+</div>
+
+<button class="accordion"style="font-size: 2em;">Okay, last spot. Any music?</button>
+<div class="panel">
+			<br><br><br><br>	<img  src="images/whitenotes.png" alt= "Music notes." width="216"/>
+								<cite class="centerImage">Image Credit: Ed Lytle</cite>
+
+<br><br>
+  <p style="font-size: 2em;">You found it! This counts, right?</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</section>
+
+	<!--Color Section-->
+	<section class="sectionBG">
+
+<div class="centerImage"> 
+		<h2 style="font-size: 7em">3. Dropdown Menu:</h3><br>
+	<br>
+	</div>
+		<p style="font-size: 3.5em">We talked a lot about my games. In a way, they were all their own experiments. Here are some links the their pages:</p><br><br><br>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn" style="font-size: 3.5em;">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://ed-lytle.itch.io/roll-toss" target="_blank" style="font-size: 2em;">GAME 1</a>
+    <a href= "https://ed-lytle.itch.io/trent-the-triangle" target="_blank" style="font-size: 2em;">GAME 2</a>
+    <a href="https://www.graycellgames.com/" target="_blank" style="font-size: 2em;">GAME 3</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</section>
+
+
+<footer><!--Credits/Citations Section-->
+		<h3>	Credits and Citations:</h3>
+		<ul>
+			<li>
+			<a href="https://www.flux-academy.com/blog/the-ultimate-guide-to-choosing-fonts" target="_blank">The Ultimate Guide to Choosing Fonts by Flux Academy</a>
+			</li>
+			
+			<li>
+			<a href="https://www.flux-academy.com/blog/ultimate-guide-to-choosing-colors-for-web-design" target="_blank">Ultimate Guide to Choosing Colors by Flux Academy</a>
+			</li>
+			
+			<li>
+			<a href="https://dribbble.com/stories/2018/12/19/choosing-colors-for-web-design-a-practical-ui-color-application-guide" target="_blank">Dribbble: Choosing colors for web design by Renee Fleck</a>
+			</li>
+			
+			<li>
+			<a href="https://dribbble.com/resources/education/principles-of-design/" target="_blank">11 Principles of Design by Renee Fleck</a>
+			</li>
+			
+			<li>
+			<a href="https://tilda.education/en/web-design-principles" target="_blank">10 Principles Of Good Web Design by Tilda Education</a>
+			</li>
+			<li>
+			<a href="https://www.figma.com/resource-library/what-is-visual-hierarchy/" target="_blank">What Is Visual Hierarchy? - Figma</a>
+			</li>
+			<li>
+			<a href="https://www.photopea.com/?utm_source=homescreen" target="_blank">Photopea</a>
+			</li>	<li>
+			<a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript</a>
+			</li>
+			<li>
+			<a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS</a>
+			</li>
+			<li>
+			<a href="https://www.w3schools.com/howto/howto_js_accordion.asp" target="_blank">W3Schools Accordion</a>
+			</li>
+			<li>
+			<a href="https://www.w3schools.com/howto/howto_css_modals.asp" target="_blank">W3Schools Modal Box</a>
+			</li>
+			<li>
+			<a href="https://www.w3schools.com/howto/howto_js_dropdown.asp" target="_blank">W3Schools Dropdown</a>
+			</li>
+			<li>
+			<a href="https://www.w3schools.com/howto/howto_css_contact_section.asp" target="_blank">W3Schools Contact</a>
+			</li>
+
+			<li>
+			<a href="https://louiseselbydyslexia.com/suffixing-rules-made-simple/">Dyslexia  - Suffixing Rules Made Simple</a>
+			</li>
+
+			<li>
+			<a href="https://pixabay.com/vectors/fortune-cookie-fortune-cookie-575751/" target="_blank">Pixabay - Fortune Cookie Image </a>
+			</li>
+
+		</ul>
+		
+	
+	</footer>
+	
+	
+</body>
+</html>

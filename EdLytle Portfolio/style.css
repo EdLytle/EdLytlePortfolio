@@ -1,0 +1,371 @@
+@charset "utf-8";
+body {
+	font-family: "M PLUS Rounded 1c", "serif";
+	font-size: 2;
+	color: white;
+	margin: 0;
+	background-color: lightgray;
+}
+
+h1 {
+	font-family: "Ranchers", sans-serif;
+  font-weight: 10;
+  font-style: normal;
+ margin-bottom: 40px !important;
+	color: black;
+
+	
+}
+
+h2 {
+	 font-family: "Ranchers", sans-serif;
+  font-weight: 7;
+text-underline-position: below;
+  font-style: normal;
+
+}
+
+
+section {
+	padding: 10%;
+	
+}
+
+.sectionBG {
+	background-color: peachpuff;
+	font-size: 12;
+	color: black;
+	text-align: center;
+
+}
+.sectionBG2 {
+	background-color: #B45E07;
+	font-family: "M PLUS Rounded 1c", "serif";
+	font-size: 2;
+	text-align: center;
+	margin-bottom: inherit;
+	color: white;
+	margin: 0;
+	 transition: 1s;
+
+	
+}
+h3 {
+	color: black;
+}
+li {
+	color: black;
+}
+.leftmost {
+	text-align: left;
+	font-size: "2em";
+}
+a {
+		color: #3C78D8;
+	}
+
+}
+footer {
+	background-color: lightgray;
+	font-family: "M PLUS Rounded 1c", "serif";
+	font-size: 2;
+	margin-bottom: inherit;
+	padding-left: 10%;
+	color: black;
+}
+.button {
+  background-color: #3C78D8;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+font-family: "M PLUS Rounded 1c", sans-serif;
+border-radius: 5px;
+	
+}
+
+.button:hover {
+	background-color: rebeccapurple;
+	  transition: 1s;
+
+}
+
+.imageSpace {
+	
+	display: flex;
+	
+}
+.centerImage{
+	display: flex;
+	gap: 30px !important;
+	justify-content: center;
+}
+
+/* Whenever you want flow to stop, use style="clear: both" */
+
+.leftImage {
+	float: left;
+	padding-right: 40px;
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+.rightImage {
+	float: right;
+	padding-left: 40px;
+	padding-bottom: 30px;
+	overflow: auto;
+	
+
+}
+
+.hero {
+    	background-image: url("images/PortfolioHeroHeader.png");
+		color: black;
+}
+
+
+
+.hero img {
+    width: 300px;
+    height: auto;
+}
+
+.homehero {
+    	background-image: url("images/Opening Banner.png")
+
+}
+ul.topnav {
+	float: left;
+	position: fixed;
+	width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: navy;
+}
+
+ul.topnav li {
+
+	float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: black;  color: yellow; transition: 2s;
+}
+
+ul.topnav li a.active {background-color: orangered;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+.sectionBG2 a {
+    color: #3C78D8;
+	hover: purple;
+}
+.hero a {
+    color: navy;
+	hover: purple;
+}
+
+
+a:hover {
+	color: purple;
+	transition: 1s;
+
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #FF0004;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+		font-family: "M PLUS Rounded 1c", "serif";
+
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+font-family: "M PLUS Rounded 1c", "serif";
+  transition: 1s;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+	font-family: "M PLUS Rounded 1c", "serif";
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rebeccapurple;
+	  transition: 1s;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 295px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+	font-family: "M PLUS Rounded 1c", "serif";
+  transition: 1s;
+
+  display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: yellow;   transition: 1s;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #602A00;
+  color: white;
+	font-family: "M PLUS Rounded 1c", "serif";
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: thick;
+  outline: thick;
+  transition: 1s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: brown;
+	color: yellow;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: black;
+  display: none;
+  overflow: hidden;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+		font-family: "M PLUS Rounded 1c", "serif";
+
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+		font-family: "M PLUS Rounded 1c", "serif";
+
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
